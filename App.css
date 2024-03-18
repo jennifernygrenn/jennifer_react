@@ -1,0 +1,410 @@
+	
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+	
+	@media print {
+		nav, #socials, #splash1, #overlay-image-bottom, #searchbar {
+			display: none;
+		}
+		#address, #telephone, #contact-contact {
+			margin-left: -100px;
+		}
+	}
+
+	body {
+		display: grid;
+		grid-template-rows: auto 1fr auto; 
+		margin: 0;
+		padding: 0;
+	}
+
+	.MainContainer {
+		padding-bottom: 20vw;
+	}
+
+	h1 {
+		font-family: 'Nunito', sans-serif;		
+		font-weight: 400;
+		color: black;
+		font-size: 3vw;
+	}
+
+	h2 {
+		font-family: 'Nunito', sans-serif;		
+		font-weight: 300;
+		color: black;
+		font-size: 2vw;
+		text-decoration: underline;
+	}
+
+	h3 {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 300;
+		color: black;
+		font-size: 2vw;
+	}
+      
+      	#fixed-header {
+		background-color: #fff;
+		display: flex;
+		grid-template-columns: repeat(3, 1fr);
+      	}
+
+      	#logo, #empty-space {
+		justify-self: start;      	
+	}
+
+      	#logo img {
+		max-width: 500px; 
+		height: auto; 
+		margin: 10px;
+      	}
+      
+      	#right-side-header {
+		display: grid;
+		flex: 1;
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: flex-end;
+		margin: 20px;
+		gap: 20px;
+		align-items: center;
+      	}
+
+      	#socials img {
+		max-width: 50px;
+		max-height: 50px;
+		height: auto;
+		float: right;
+		margin-right: 30px; 
+	}
+
+	#overlay-image-bottom {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20vw;
+		height: auto;		
+		z-index: 999; 
+	}
+      
+	#navbar {
+		position: relative;
+	}
+      	#navbar ul {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: repeat(8, auto);
+      	}
+
+	#navbar ul li a {
+		text-decoration: none; 
+		color: black;
+		justify-content: center;
+	}
+
+	#navbar ul li a:hover {
+		text-decoration: underline;
+	}
+      
+      	#content {
+		display: grid;
+		background-color: #E6F4FF;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.home-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		grid-template-rows: repeat(3, auto);
+		min-height: 60vh;
+	}
+
+	.about-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		min-height: 60vh;
+	}
+
+	.contact-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		min-height: 60vh;
+	}
+
+	.support-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		min-height: 60vh;
+	}
+
+	.artist-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		grid-template-rows: repeat(3, auto);
+	}
+
+	.artist-page2 {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); 
+		grid-template-rows: repeat(3, auto);
+	}
+
+	.email-page {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		min-height: 60vh;
+	}
+
+	#splash1 {
+		grid-column: 5;
+		left: 0;
+	}
+	      
+	#splash1 img {
+		width: 100%; 
+		height: auto; 
+		max-width: 100%; 
+    		max-height: 100%; 
+	}
+
+	#welcome-text {
+		grid-column: 1/3;
+		margin-top: 50px;
+		margin-left: 70px;
+	}
+
+	#slide {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); 
+		gap: 20px; 
+		justify-items: end; 
+	}
+
+	#slide img, #slide iframe {
+		width: 20vw;
+		height: auto;
+		border-radius: 10px;
+		margin-right: 20px;
+		justify-self: end;
+
+	}
+
+	#about-slide {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		padding-top: 1vw;
+		top: 100%; /* Placera sliden direkt under About-menyn */
+	}
+	#about-slide ul {
+		display: block;
+	}
+	#about-slide ul li {
+		padding: 1vw;
+	}
+      
+	#about-text-container {
+		font-family: 'Nunito', sans-serif;
+		grid-column: 2 / span 3; 
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-row: 1;	    
+	}
+
+	#rac-entry {
+		grid-column: 1;
+		margin-top: 50px;
+		margin-left: 80px;
+	}
+
+	#rac-entry img {
+		position: absolute;
+		width: 15vw;
+		height: auto;
+		border-radius: 50%;
+	}
+
+	#about-text {
+		font-weight: 300;
+		color: black;
+		font-size: 1.2vw;
+		width: 50vw;
+		text-align: center;
+		justify-content: center;
+	}
+
+	#about-links a, #artist-slide a, #my-table a {
+		font-size: 1.5vw;
+		color: black;
+		margin: 20px;
+	}
+
+	#contact-text, #artist-text {
+		display: grid;
+		grid-row: 1;
+		grid-column: 1;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+
+	#contact-text-container {
+		display: grid;
+		grid-column: 2 / 4;
+		gap: 100px;
+		font-family: 'Nunito', sans-serif;		
+		font-weight: 300;
+		grid-row: 1;
+	}
+
+	#address {
+		white-space: nowrap;
+		grid-row: 2;
+		grid-column: 2;
+		font-size: 1vw;
+		
+	} 
+	#telephone {
+		grid-row: 2;
+		grid-column: 3;
+		font-size: 1vw;
+	} 
+	
+	#contact-contact {
+		grid-row: 2;
+		grid-column: 4;
+		font-size: 1vw;
+	}
+
+	#donation-container {
+		display: grid;	
+		grid-column: 2/4;
+		justify-content: center;
+		align-items: center;
+		margin-left: 200px;
+	}
+
+	#donation-text {
+		font-family: 'Nunito', sans-serif;		
+		text-align: center;
+		width: 600px;
+	}
+
+	#donate-button {
+		background-color: orange;
+		color: black;
+		border: 5px rgb(173, 65, 26);
+		padding: 10px 40px;
+		font-size: medium;
+		border-radius: 20px;
+		cursor: pointer;
+	}
+	
+	#slide {
+		grid-column: 2/ span 2;
+	}
+
+	#artist-slide {
+		grid-column: 2 / span 3;
+		max-height: 260px;
+		background-color: #fff;
+		border-radius: 130px;	
+		font-family: 'Nunito', sans-serif;
+		text-align: center;
+		color: black;
+	}
+
+	#artist-slide p {
+		margin-right: 30px;
+	}
+
+	#artist-slide img{
+		grid-column: span 2;
+		width: 25%;
+		height: auto;
+		float: left;
+	}
+
+	#artist-button {
+ 		grid-column: 5;	
+		margin-top: 90px;
+		margin-left: 40px;
+	}
+
+	#artist-button img {
+		height: 100px;
+		width: auto;
+	}
+
+	#my-table {
+		grid-column: 2 / span 3; /* Placera tabellen från andra till fjärde kolumnen */
+	}
+
+	#my-table td {
+		text-align: center; /* Centrera innehållet i varje cell */
+	}
+
+	#my-table img {
+		width: 15vw;
+  		height: auto;
+	}
+
+	#email {
+		grid-column: 2 / span 2;
+		align-items: center;	
+		font-family: 'Nunito', sans-serif;
+	}   
+	
+	#email textarea {
+		width: 100%;
+	}
+
+	#email button {
+		cursor: pointer;
+	}
+      
+      	#footer {
+		display: grid;
+		background-color: #333;
+		grid-template-columns: repeat(6, auto);
+		color: #D3D3D3;
+		align-items: center; 
+		list-style-type: none;
+      	}
+
+	.indent {
+		margin-left: 50px;
+	}
+
+	#footer-text {
+		width: max-content;
+		grid-column: 3;
+	}
+	#connect-contact {
+		grid-column: 6;
+		color:white;
+	}
+	
+      	#connect-contact ul {	
+		padding: 0;
+      	}
+	
+      	#connect-contact ul li {
+		display: inline;
+		margin: 0 10px;
+      	}
+
+	#connect-contact ul li a {
+		color: #D3D3D3;
+	}
+
+	#button-color {
+		grid-column: 5;
+		width: 10vw;
+		height: 2vw;
+	}
+      
